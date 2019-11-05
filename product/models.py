@@ -10,7 +10,7 @@ class Category(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=50,null=False)
     id = models.IntegerField(null=False,primary_key=True)
-    Date = models.DateTimeField(null=False,default=timezone.datetime.now())
+    Date = models.DateTimeField(default=timezone.datetime.now())
     image = models.ImageField(null=True)
     price = models.IntegerField(null=False)
     seller = models.CharField(null=False,max_length=50)
